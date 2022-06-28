@@ -6,12 +6,13 @@
     <!-- Adding React CDN links -->
     <script
       crossorigin
-      src="https://unpkg.com/react@18/umd/react.production.min.js"
+      src="https://unpkg.com/react@18/umd/react.development.js"
     ></script>
     <script
       crossorigin
-      src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"
+      src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"
     ></script>
+    <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
     <style>
       .hello {
         color: red;
@@ -19,7 +20,7 @@
     </style>
   </head>
   <body>
-    <p class="hello">Hello React</p>
+    <div id="root"></div>
   </body>
-  <script src="./index.js"></script>
+  <script src="index.js" type="text/babel"></script>
 </html>
