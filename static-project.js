@@ -14,4 +14,5 @@ const staticPage = (
   </div>
 );
 
-ReactDOM.render(staticPage, document.getElementById("root"));
+// ReactDOM.render(staticPage, document.getElementById("root"));
+// ReactDOM.render(<Page />, document.getElementById("root"));
