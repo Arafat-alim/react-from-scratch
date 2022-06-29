@@ -4,8 +4,13 @@
 function Header() {
   return (
     <header>
-      <nav>
-        <img src="./react-logo.png" alt="react-logo" width="45px" />
+      <nav className="nav">
+        <img src="./react-logo.png" alt="react-logo" className="nav-logo" />
+        <ul className="nav-items">
+          <li>About</li>
+          <li>Pricing</li>
+          <li>Menu</li>
+        </ul>
       </nav>
     </header>
   );
@@ -14,7 +19,7 @@ function Header() {
 //! Main component (Child component)
 function MainComponent() {
   return (
-    <>
+    <div>
       <h1>I love React </h1>
       <ol>
         <li>I want to Learn React, becuase i love JS</li>
@@ -22,7 +27,7 @@ function MainComponent() {
         <li>WE devloper have a huge community on React</li>
         <li>React gives our code more reusuablity, extensibility</li>
       </ol>
-    </>
+    </div>
   );
 }
 //! Footer component (Child component)
