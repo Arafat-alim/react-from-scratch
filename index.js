@@ -9,7 +9,7 @@ const MainContent = () => {
   );
 };
 
-/
+/*
 ReactDOM.render(
   <div>
     <MainContent />
@@ -18,6 +18,31 @@ ReactDOM.render(
 
   document.getElementById("root")
 );
+
+*/
+
+//! JSX
+const page = (
+  <div>
+    <h1>Hello Boss</h1>
+    <p>How are you Arafat!</p>
+  </div>
+);
+console.log(page); //! Object { "$$typeof": Symbol("react.element"), type: "div", key: null, ref: null, props: {…}, _owner: null, _store: {…}, … }
+
+//! Creating a navbar using jSX
+const navBar = (
+  <nav>
+    <h1>My Website</h1>
+    <ul>
+      <li>Pricing</li>
+      <li>About</li>
+      <li>Contact</li>
+    </ul>
+  </nav>
+);
+
+ReactDOM.render(navBar, document.getElementById("root"));
 
 /*
 let elem = document.createElement("h1");
