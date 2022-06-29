@@ -1,4 +1,6 @@
 //! Header component (Child component)
+import React from "react";
+
 function Header() {
   return (
     <header>
