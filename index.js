@@ -21,6 +21,7 @@ ReactDOM.render(
 
 */
 
+/*
 //! JSX
 const page = (
   <div>
@@ -44,9 +45,28 @@ const navBar = (
 
 ReactDOM.render(navBar, document.getElementById("root"));
 
+*/
 /*
 let elem = document.createElement("h1");
 elem.textContent = "this is a imperative way";
 elem.className = "header";
 document.getElementById("root").append(elem);
 */
+
+//! append() jsx into root
+let rootBody = document.getElementById("root");
+//! creating a JSX code
+const page = (
+  <div>
+    <h1>I am Learning React JS from Scratch</h1>
+    <ul>
+      <li>React Courses</li>
+      <li>React Framework</li>
+    </ul>
+  </div>
+);
+
+//apending
+// rootBody.append(page); // [object object]
+ReactDOM.render(page, rootBody);
+// rootBody.append(JSON.stringify(page)); // [object object]
