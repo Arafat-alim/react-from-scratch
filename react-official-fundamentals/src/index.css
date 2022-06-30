@@ -61,3 +61,21 @@ main {
   font-size: 1.4rem;
   color: #61dafb;
 }
+
+/* contact component  */
+.contacts {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+.contact-card {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  height: auto;
+  box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+  max-width: 300px;
+}
