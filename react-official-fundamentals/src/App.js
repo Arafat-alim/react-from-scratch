@@ -6,27 +6,29 @@ import Contact from "./components/Contact";
 import whiskar from "./CatImages/mr-whiskerson.png";
 import fluffyKitten from "./CatImages/fluffykins.png";
 import pumpkin from "./CatImages/pumpkin.png";
+import Jokes from "./components/Jokes";
 
 function App() {
   return (
     <div className="container">
-      <Contact
+      {/* <Contact
         name="Mr Whinskan"
         img={whiskar}
         phone="123456789"
         mail="pedro@gmail.com"
       />
-      <Contact
-        name="Mr Whitey"
-        img={pumpkin}
-        phone="741258963"
-        mail="papaya@gmail.com"
+    */}
+      <Jokes
+        setup=" Why don't pirates travel on mountain roads?"
+        punchLine="Scurvy."
       />
-      <Contact
-        name="Mc Bhoosan"
-        img={fluffyKitten}
-        phone="963258741"
-        mail="jackson@gmail.com"
+      <Jokes
+        setup="How did the hacker escape the police?"
+        punchLine=" He just ransomware!"
+      />
+      <Jokes
+        setup="I got my daughter a fridge for her birthday"
+        punchLine="I can't wait to see her face light up when she opens it."
       />
     </div>
   );
