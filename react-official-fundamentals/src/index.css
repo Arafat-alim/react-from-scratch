@@ -5,11 +5,20 @@
 }
 
 body {
-  margin: 0;
+  /* for solo project 1  */
+  /* margin: 0;
   font-family: "Inter", sans-serif;
-  height: 100vh;
+  height: 100vh; */
   /* background-color: #282d35; */
   /* color: #fff; */
+
+  /* for project 2  */
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  font-family: "Inter", sans-serif;
+  background-color: whitesmoke;
 }
 
 nav {
@@ -79,4 +88,33 @@ main {
   padding: 13px;
   padding-bottom: 20px;
   background-color: white;
+}
+
+.contact-card > img {
+  width: 100%;
+  height: auto;
+  align-self: center;
+  border: 5px;
+  object-fit: cover;
+}
+
+.contact-card > h3 {
+  font-weight: 700;
+  font-size: 18px;
+}
+
+.info-group {
+  display: flex;
+  align-items: center;
+}
+
+.info-group > img {
+  height: 11px;
+  margin-right: 8px;
+}
+
+.info-group > p {
+  margin-block: 3px;
+  font-size: 12px;
+  color: #2b283a;
 }

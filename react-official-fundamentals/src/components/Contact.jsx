@@ -1,13 +1,14 @@
 import React from "react";
-import whiskar from "../images/CatImages/mr-whiskerson.png";
-import phoneIcon from "../images/CatImages/phone-icon.png";
-import mailIcon from "../images/CatImages/mail-icon.png";
 
-export default function Contact() {
+import phoneIcon from "../CatImages/phone-icon.png";
+import mailIcon from "../CatImages/mail-icon.png";
+
+export default function Contact(props) {
+  console.log(props);
   return (
     <div className="contacts">
       <div className="contact-card">
-        <img src={whiskar} alt="whiskar" />
+        <img src="" alt="whiskar" />
         <h3>Mr. Whiskerson</h3>
         <div className="info-group">
           <img src={phoneIcon} alt="phone" />
