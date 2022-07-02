@@ -8,15 +8,15 @@ export default function Contact(props) {
   return (
     <div className="contacts">
       <div className="contact-card">
-        <img src="" alt="whiskar" />
-        <h3>Mr. Whiskerson</h3>
+        <img src={props.img} alt="whiskar" />
+        <h3>{props.name}</h3>
         <div className="info-group">
           <img src={phoneIcon} alt="phone" />
-          <p>(212) 555-1234</p>
+          <p>{props.phone}</p>
         </div>
         <div className="info-group">
           <img src={mailIcon} alt="mail" />
-          <p>mr.whiskaz@catnap.meow</p>
+          <p>{props.mail}</p>
         </div>
       </div>
     </div>
