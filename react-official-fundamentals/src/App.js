@@ -18,10 +18,7 @@ function App() {
         mail="pedro@gmail.com"
       />
     */}
-      <Jokes
-        setup=" Why don't pirates travel on mountain roads?"
-        punchLine="Scurvy."
-      />
+      <Jokes punchLine="Scurvy." />
       <Jokes
         setup="How did the hacker escape the police?"
         punchLine=" He just ransomware!"
