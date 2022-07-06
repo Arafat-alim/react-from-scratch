@@ -1,4 +1,5 @@
 import React from "react";
+import ReactState from "./components/ReactState";
 // import Contact from "./components/Contact";
 // // import Main from "./components/Main";
 // // import Navbar from "./components/Navbar";
@@ -8,7 +9,7 @@ import React from "react";
 // import pumpkin from "./CatImages/pumpkin.png";
 // import Jokes from "./components/Jokes";
 // import EventComponent from "./components/EventComponent";
-import Interact from "./components/Interact";
+// import Interact from "./components/Interact";
 
 function App() {
   return (
@@ -30,7 +31,8 @@ function App() {
         punchLine="I can't wait to see her face light up when she opens it."
       /> */}
       {/* <EventComponent /> */}
-      <Interact />
+      {/* <Interact /> */}
+      <ReactState />
     </div>
   );
 }
