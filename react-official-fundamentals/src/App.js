@@ -1,12 +1,13 @@
 import React from "react";
-import Contact from "./components/Contact";
-// import Main from "./components/Main";
-// import Navbar from "./components/Navbar";
-// import PropComponent from "./components/PropComponent";
-import whiskar from "./CatImages/mr-whiskerson.png";
-import fluffyKitten from "./CatImages/fluffykins.png";
-import pumpkin from "./CatImages/pumpkin.png";
-import Jokes from "./components/Jokes";
+// import Contact from "./components/Contact";
+// // import Main from "./components/Main";
+// // import Navbar from "./components/Navbar";
+// // import PropComponent from "./components/PropComponent";
+// import whiskar from "./CatImages/mr-whiskerson.png";
+// import fluffyKitten from "./CatImages/fluffykins.png";
+// import pumpkin from "./CatImages/pumpkin.png";
+// import Jokes from "./components/Jokes";
+import EventComponent from "./components/EventComponent";
 
 function App() {
   return (
@@ -18,7 +19,7 @@ function App() {
         mail="pedro@gmail.com"
       />
     */}
-      <Jokes punchLine="Scurvy." />
+      {/* <Jokes punchLine="Scurvy." />
       <Jokes
         setup="How did the hacker escape the police?"
         punchLine=" He just ransomware!"
@@ -26,7 +27,8 @@ function App() {
       <Jokes
         setup="I got my daughter a fridge for her birthday"
         punchLine="I can't wait to see her face light up when she opens it."
-      />
+      /> */}
+      <EventComponent />
     </div>
   );
 }
