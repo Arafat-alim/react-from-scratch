@@ -7,7 +7,8 @@ import React from "react";
 // import fluffyKitten from "./CatImages/fluffykins.png";
 // import pumpkin from "./CatImages/pumpkin.png";
 // import Jokes from "./components/Jokes";
-import EventComponent from "./components/EventComponent";
+// import EventComponent from "./components/EventComponent";
+import Interact from "./components/Interact";
 
 function App() {
   return (
@@ -28,7 +29,8 @@ function App() {
         setup="I got my daughter a fridge for her birthday"
         punchLine="I can't wait to see her face light up when she opens it."
       /> */}
-      <EventComponent />
+      {/* <EventComponent /> */}
+      <Interact />
     </div>
   );
 }

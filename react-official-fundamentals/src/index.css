@@ -150,3 +150,10 @@ main {
   cursor: pointer;
   background-color: #fff;
 }
+
+.add--button {
+  padding: 20px 50px;
+  font-size: 1.2rem;
+  border: 1px solid whitesmoke;
+  border-radius: 5px;
+}
