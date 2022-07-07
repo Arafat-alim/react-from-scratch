@@ -1,10 +1,10 @@
 import React from "react";
-import ComplexStateArray from "./components/ComplexStateArray";
+import ComplexStateObject from "./components/ComplexStateObject";
 
 function App() {
   return (
     <div className="container">
-      <ComplexStateArray />
+      <ComplexStateObject />
     </div>
   );
 }
