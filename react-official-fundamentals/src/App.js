@@ -10,7 +10,8 @@ import React from "react";
 // import Jokes from "./components/Jokes";
 // import EventComponent from "./components/EventComponent";
 // import Interact from "./components/Interact";
-import Counter from "./components/Counter";
+// import Counter from "./components/Counter";
+import Ternary from "./components/Ternary";
 
 function App() {
   return (
@@ -34,7 +35,8 @@ function App() {
       {/* <EventComponent /> */}
       {/* <Interact /> */}
       {/* <ReactState /> */}
-      <Counter />
+      {/* <Counter /> */}
+      <Ternary />
     </div>
   );
 }
