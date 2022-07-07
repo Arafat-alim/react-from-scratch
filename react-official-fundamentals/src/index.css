@@ -167,3 +167,27 @@ main {
   align-items: center;
   background-color: white;
 }
+
+.counter {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.counter--value {
+  background-color: #21222a;
+  color: #fff;
+  height: 100px;
+  width: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+}
+
+.counter--button {
+  width: 100px;
+  margin-bottom: 5px;
+  font-size: 1rem;
+  font-weight: 600;
+}

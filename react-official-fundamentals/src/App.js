@@ -1,5 +1,5 @@
 import React from "react";
-import ReactState from "./components/ReactState";
+// import ReactState from "./components/ReactState";
 // import Contact from "./components/Contact";
 // // import Main from "./components/Main";
 // // import Navbar from "./components/Navbar";
@@ -10,6 +10,7 @@ import ReactState from "./components/ReactState";
 // import Jokes from "./components/Jokes";
 // import EventComponent from "./components/EventComponent";
 // import Interact from "./components/Interact";
+import Counter from "./components/Counter";
 
 function App() {
   return (
@@ -32,7 +33,8 @@ function App() {
       /> */}
       {/* <EventComponent /> */}
       {/* <Interact /> */}
-      <ReactState />
+      {/* <ReactState /> */}
+      <Counter />
     </div>
   );
 }
