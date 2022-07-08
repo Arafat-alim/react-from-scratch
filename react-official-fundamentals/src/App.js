@@ -1,4 +1,5 @@
 import React from "react";
+import MessageArr from "./components/MessageArr";
 
 import ParentJokes from "./components/ParentJokes";
 
@@ -18,7 +19,7 @@ function App() {
       {/* <button onClick={addCount}>+</button>
       <Count count={count} />
       <button onClick={subCount}>-</button> */}
-      <ParentJokes />
+      <MessageArr />
     </div>
   );
 }
