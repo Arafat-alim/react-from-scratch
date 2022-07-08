@@ -1,11 +1,16 @@
-import React from "react";
+import React, { useState } from "react";
 
 export default function Box(props) {
+  const [on, setOn] = useState(props.on);
+
+  function toggleBtn() {
+    setOn((prevState) => !prevState);
+  }
   const styles = {
-    backgroundColor: props.on ? "#222222" : "transparent",
+    backgroundColor: on ? "#222222" : "transparent",
   };
   return (
-    <div style={styles} className="box--element">
+    <div style={styles} className="box--element" onClick={toggleBtn}>
       Box
     </div>
   );
