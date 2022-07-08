@@ -12,7 +12,9 @@ export default function Jokes(props) {
       {props.setup && <h3>Setup: {props.setup}</h3>}
       {/* <p>{props.punchLine}</p> */}
       {ishown && <p>{props.punchLine}</p>}
-      <button onClick={toggle}>Show PunchLine</button>
+      <button onClick={toggle}>
+        {ishown ? "Hide PunchLine" : "Show PunchLine"}
+      </button>
       <hr />
     </div>
   );
