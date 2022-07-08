@@ -1,5 +1,6 @@
 import React from "react";
-import BoxParent from "./components/BoxParent";
+
+import ParentJokes from "./components/ParentJokes";
 
 function App() {
   //! creating a state for count
@@ -17,7 +18,7 @@ function App() {
       {/* <button onClick={addCount}>+</button>
       <Count count={count} />
       <button onClick={subCount}>-</button> */}
-      <BoxParent darkMode={false} />
+      <ParentJokes />
     </div>
   );
 }
