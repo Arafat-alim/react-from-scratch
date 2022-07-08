@@ -234,3 +234,16 @@ main {
   color: gray;
   margin-block: 7px;
 }
+
+/* box component */
+.box {
+  color: #000;
+}
+
+.box--element {
+  height: 100px;
+  width: 100px;
+  border: 1px solid #000;
+  display: inline-block;
+  margin: 4px;
+}

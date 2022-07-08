@@ -1,8 +1,5 @@
 import React from "react";
-import Parent from "./components/Parent";
-
-// import ComplexStateObject from "./components/ComplexStateObject";
-// import Count from "./components/Count";
+import BoxParent from "./components/BoxParent";
 
 function App() {
   //! creating a state for count
@@ -20,7 +17,7 @@ function App() {
       {/* <button onClick={addCount}>+</button>
       <Count count={count} />
       <button onClick={subCount}>-</button> */}
-      <Parent />
+      <BoxParent />
     </div>
   );
 }
