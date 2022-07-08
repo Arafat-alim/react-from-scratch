@@ -1,5 +1,12 @@
 import React from "react";
 
 export default function Box(props) {
-  return <div>{/* {props.on ? "Yipee" : "OOPS!"} */}</div>;
+  const styles = {
+    backgroundColor: props.on === true ? "red" : "blue",
+  };
+  return (
+    <div style={styles} className="box--element">
+      Box
+    </div>
+  );
 }

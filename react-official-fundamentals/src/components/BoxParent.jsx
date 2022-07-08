@@ -11,15 +11,17 @@ export default function BoxParent(props) {
     backgroundColor: props.darkMode ? "#ccc" : "#000",
   };
 
-  const boxes = box.map((item) => (
-    <div style={styles} className="box--element" key={item.id}>
-      Box {item.id}
-    </div>
-  ));
+  //   const boxes = box.map((item) => (
+  //     <div style={styles} className="box--element" key={item.id}>
+  //       Box {item.id}
+  //     </div>
+  //   ));
+
+  const boxElemeent = box.map((item) => <Box on={item.on} key={item.id} />);
   return (
     <div className="box">
       <h1>Boxes will go here</h1>
-      {boxes}
+      {boxElemeent}
     </div>
   );
 }
