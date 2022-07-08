@@ -1,6 +1,5 @@
 import React from "react";
-
-import ParentJokes from "./components/ParentJokes";
+import MessageArr2 from "./components/MessageArr2";
 
 function App() {
   //! creating a state for count
@@ -18,7 +17,7 @@ function App() {
       {/* <button onClick={addCount}>+</button>
       <Count count={count} />
       <button onClick={subCount}>-</button> */}
-      <ParentJokes />
+      <MessageArr2 />
     </div>
   );
 }
