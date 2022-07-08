@@ -2,12 +2,17 @@ import React, { useState } from "react";
 import boxesApi from "../BoxesAPI";
 import Box from "./Box";
 
-export default function BoxParent() {
+export default function BoxParent(props) {
   const [box, setBox] = useState(boxesApi);
   //! mapping for rendering
 
+  // Dyanmic Style
+  const styles = {
+    backgroundColor: props.darkMode ? "#ccc" : "#000",
+  };
+
   const boxes = box.map((item) => (
-    <div className="box--element" key={item.id}>
+    <div style={styles} className="box--element" key={item.id}>
       Box {item.id}
     </div>
   ));

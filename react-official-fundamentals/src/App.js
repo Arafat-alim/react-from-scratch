@@ -17,7 +17,7 @@ function App() {
       {/* <button onClick={addCount}>+</button>
       <Count count={count} />
       <button onClick={subCount}>-</button> */}
-      <BoxParent />
+      <BoxParent darkMode={false} />
     </div>
   );
 }
