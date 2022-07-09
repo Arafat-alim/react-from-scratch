@@ -7,6 +7,7 @@ export default function FormTwo() {
     email: "",
     comments: "",
     isFriendly: true,
+    employment: "",
   });
 
   console.log(formData);
@@ -68,6 +69,41 @@ export default function FormTwo() {
         onChange={handleChange}
       />
       <label htmlFor="isFriendly">Are you Friendly?</label>
+
+      {/* adding radio button */}
+      <fieldset>
+        <legend>Current employment status</legend>
+        <input
+          type="radio"
+          id="unemployment"
+          name="employment"
+          value="unemployed"
+          onChange={handleChange}
+          checked={formData.employment === "unemployed"}
+        />
+        <label htmlFor="unemployment">Unemployed</label>
+        <br />
+        <input
+          type="radio"
+          id="part-time"
+          name="employment"
+          value="part-time"
+          checked={formData.employment === "part-time"}
+          onChange={handleChange}
+        />
+        <label htmlFor="part-time">Part Time</label>
+        <br />
+        <input
+          type="radio"
+          id="full-time"
+          name="employment"
+          value="full-time"
+          checked={formData.employment === "full-time"}
+          onChange={handleChange}
+        />
+        <label htmlFor="full-time">Full Time</label>
+        <br />
+      </fieldset>
     </form>
   );
 }
