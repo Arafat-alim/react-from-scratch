@@ -1,5 +1,5 @@
 import React from "react";
-import ParentForms from "./components/Forms/ParentsForms";
+import ParentApi from "./components/API/ParentApi";
 
 function App() {
   //! creating a state for count
@@ -17,7 +17,7 @@ function App() {
       {/* <button onClick={addCount}>+</button>
       <Count count={count} />
       <button onClick={subCount}>-</button> */}
-      <ParentForms />
+      <ParentApi />
     </div>
   );
 }
