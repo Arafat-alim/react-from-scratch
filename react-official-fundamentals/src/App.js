@@ -1,5 +1,5 @@
 import React from "react";
-import MessageArr2 from "./components/MessageArr2";
+import ParentForms from "./components/Forms/ParentsForms";
 
 function App() {
   //! creating a state for count
@@ -17,7 +17,7 @@ function App() {
       {/* <button onClick={addCount}>+</button>
       <Count count={count} />
       <button onClick={subCount}>-</button> */}
-      <MessageArr2 />
+      <ParentForms />
     </div>
   );
 }
