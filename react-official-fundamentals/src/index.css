@@ -247,3 +247,13 @@ main {
   display: inline-block;
   margin: 4px;
 }
+
+input,
+textarea {
+  margin-bottom: 30px;
+  height: 30px;
+  display: block;
+  text-indent: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}

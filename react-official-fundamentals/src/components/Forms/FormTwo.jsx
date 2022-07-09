@@ -5,6 +5,7 @@ export default function FormTwo() {
     firstName: "",
     lastName: "",
     email: "",
+    comments: "",
   });
 
   console.log(formData);
@@ -40,6 +41,11 @@ export default function FormTwo() {
         placeholder="Email ID"
         name="email"
         value={formData.email}
+        onChange={handleChange}
+      />
+      <textarea
+        value={formData.comments}
+        name="comments"
         onChange={handleChange}
       />
     </form>
