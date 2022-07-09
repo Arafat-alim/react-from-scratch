@@ -1,11 +1,10 @@
 import React from "react";
 
-import FormTwo from "./FormTwo";
+import SignUpForm from "./SignUpForm";
 export default function ParentForms() {
   return (
     <div>
-      <h1>Parent Form</h1>
-      <FormTwo />
+      <SignUpForm />
     </div>
   );
 }
