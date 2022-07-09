@@ -22,6 +22,18 @@ export default function SignUpForm() {
 
   function handleSubmit(e) {
     e.preventDefault();
+    if (formData.password === formData.cpassword) {
+      alert("Thank you for Sign Up!");
+    } else {
+      alert("Password do not match");
+      return;
+    }
+
+    if (formData.isChecked) {
+      console.log("Thanks for signing up for our newsletter!");
+    }
+
+    console.log(formData);
   }
   return (
     <div className="form--container">
