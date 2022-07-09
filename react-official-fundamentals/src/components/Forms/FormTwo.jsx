@@ -8,6 +8,7 @@ export default function FormTwo() {
     comments: "",
     isFriendly: true,
     employment: "",
+    favColor: "",
   });
 
   console.log(formData);
@@ -104,6 +105,24 @@ export default function FormTwo() {
         <label htmlFor="full-time">Full Time</label>
         <br />
       </fieldset>
+
+      {/* select box */}
+      <label htmlFor="favColor">What is your Favourite Color</label>
+      <br />
+      <select
+        name="favColor"
+        id="favColor"
+        value={formData.favColor}
+        onChange={handleChange}
+      >
+        <option value="">-- Choose --</option>
+        <option value="red">Red</option>
+        <option value="blue">Blue</option>
+        <option value="green">Green</option>
+        <option value="yellow">Yellow</option>
+        <option value="black">Black</option>
+        <option value="purple">Purple</option>
+      </select>
     </form>
   );
 }
