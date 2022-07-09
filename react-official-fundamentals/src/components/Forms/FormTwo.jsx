@@ -4,6 +4,7 @@ export default function FormTwo() {
   const [formData, setFormData] = useState({
     firstName: "",
     lastName: "",
+    email: "",
   });
 
   console.log(formData);
@@ -25,12 +26,21 @@ export default function FormTwo() {
         placeholder="First Name"
         onChange={handleChange}
         name="firstName"
+        value={formData.firstName}
       />
       <input
         type="text"
         placeholder="First Name"
         onChange={handleChange}
         name="lastName"
+        value={formData.lastName}
+      />
+      <input
+        type="email"
+        placeholder="Email ID"
+        name="email"
+        value={formData.email}
+        onChange={handleChange}
       />
     </form>
   );
