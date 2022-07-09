@@ -11,7 +11,7 @@ export default function FormTwo() {
     favColor: "",
   });
 
-  console.log(formData);
+  //   console.log(formData);
 
   //! creating
   //   function handleChange(event) {
@@ -34,8 +34,15 @@ export default function FormTwo() {
       };
     });
   }
+
+  function handleSubmit(event) {
+    event.preventDefault();
+    //submitAPI(formData);
+    console.log(formData);
+    setFormData("");
+  }
   return (
-    <form>
+    <form onSubmit={handleSubmit}>
       <input
         type="text"
         placeholder="First Name"
@@ -123,6 +130,9 @@ export default function FormTwo() {
         <option value="black">Black</option>
         <option value="purple">Purple</option>
       </select>
+      <br />
+      <br />
+      <button>Submit</button>
     </form>
   );
 }
