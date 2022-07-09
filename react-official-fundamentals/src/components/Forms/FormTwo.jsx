@@ -6,17 +6,29 @@ export default function FormTwo() {
     lastName: "",
     email: "",
     comments: "",
+    isFriendly: true,
   });
 
   console.log(formData);
 
   //! creating
+  //   function handleChange(event) {
+  //     console.log(event.target.name);
+  //     setFormData((prevData) => {
+  //       return {
+  //         ...prevData,
+  //         [event.target.name]: event.target.value,
+  //       };
+  //     });
+  //   }
+
+  //! Advanced Handling
   function handleChange(event) {
-    console.log(event.target.name);
+    const { name, value, type, checked } = event.target;
     setFormData((prevData) => {
       return {
         ...prevData,
-        [event.target.name]: event.target.value,
+        [name]: type === "checkbox" ? checked : value,
       };
     });
   }
@@ -48,6 +60,14 @@ export default function FormTwo() {
         name="comments"
         onChange={handleChange}
       />
+      <input
+        type="checkbox"
+        id="isFriendly"
+        name="isFriendly"
+        checked={formData.isFriendly}
+        onChange={handleChange}
+      />
+      <label htmlFor="isFriendly">Are you Friendly?</label>
     </form>
   );
 }
