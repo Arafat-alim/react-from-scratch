@@ -249,7 +249,8 @@ main {
 }
 
 input[type="text"],
-input[type="email"] {
+input[type="email"],
+input[type="password"] {
   margin-bottom: 15px;
   height: 30px;
   text-indent: 10px;

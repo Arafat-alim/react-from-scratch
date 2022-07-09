@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import "./style.css";
 
 export default function SignUpForm() {
   //! creating a state
@@ -23,44 +24,47 @@ export default function SignUpForm() {
     e.preventDefault();
   }
   return (
-    <form onSubmit={handleSubmit}>
-      <input
-        type="email"
-        name="email"
-        placeholder="Enter Email"
-        value={formData.email}
-        onChange={handleChange}
-      />
-      <br />
-      <input
-        type="password"
-        name="password"
-        placeholder="Enter Password"
-        value={formData.password}
-        onChange={handleChange}
-      />
-      <br />
-      <br />
-      <input
-        type="password"
-        name="cpassword"
-        placeholder="Confirm Password"
-        value={formData.cpassword}
-        onChange={handleChange}
-      />
-      <br />
-      <br />
-      <input
-        type="checkbox"
-        id="isChecked"
-        checked={formData.isChecked}
-        name="isChecked"
-        onChange={handleChange}
-      />
-      <label htmlFor="isChecked">I want to join the newsletter</label>
-      <br />
-      <br />
-      <button>Submit</button>
-    </form>
+    <div className="form--container">
+      <form onSubmit={handleSubmit} className="form">
+        <input
+          type="email"
+          name="email"
+          placeholder="Enter Email"
+          value={formData.email}
+          onChange={handleChange}
+          className="form--input"
+        />
+
+        <input
+          type="password"
+          name="password"
+          placeholder="Enter Password"
+          value={formData.password}
+          onChange={handleChange}
+          className="form--input"
+        />
+
+        <input
+          type="password"
+          name="cpassword"
+          placeholder="Confirm Password"
+          value={formData.cpassword}
+          onChange={handleChange}
+          className="form--input"
+        />
+
+        <input
+          type="checkbox"
+          id="isChecked"
+          checked={formData.isChecked}
+          name="isChecked"
+          onChange={handleChange}
+          className="form--marketing"
+        />
+        <label htmlFor="isChecked">I want to join the newsletter</label>
+
+        <button className="form--submit">Sign Up!</button>
+      </form>
+    </div>
   );
 }
